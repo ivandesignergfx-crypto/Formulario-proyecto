@@ -148,15 +148,16 @@
   .field{ margin-bottom:20px; }
   .field:last-child{ margin-bottom:0; }
   .row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  label{
+label{
     display:block;
     font-size:12px;
     font-family:'IBM Plex Mono',monospace;
     letter-spacing:0.03em;
     color:var(--muted);
-    margin-bottom:8px;
+    margin-bottom:10px;
+    line-height:1.5;
     text-transform:uppercase;
-  }
+}
   label .req{ color:var(--rust); }
   input, select, textarea{
     width:100%;
@@ -385,10 +386,6 @@ form{
     display:block;
 }
 
-.field{
-    margin-bottom:18px;
-}
-
 label{
     font-size:13px;
 }
@@ -471,6 +468,19 @@ textarea{
 .status-error{color:#A8442E}
 .loading{opacity:.75;pointer-events:none}
 button[disabled]{cursor:not-allowed}
+
+  @media (max-width:768px){
+
+    .field{
+        margin-bottom:30px;
+    }
+
+    label{
+        margin-bottom:12px;
+        line-height:1.6;
+    }
+
+}
 
 </style>
 </head>
