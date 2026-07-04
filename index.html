@@ -44,21 +44,6 @@
     height:6px;
     background:var(--azul);
   }
-
-  /* Móviles pequeños */
-@media (max-width:480px){
-   ...
-}
-
-/* Móviles grandes */
-@media (min-width:481px) and (max-width:768px){
-   ...
-}
-
-/* Tablets */
-@media (min-width:769px) and (max-width:1024px){
-   ...
-}
   
   header{
     padding:52px 48px 32px;
@@ -313,17 +298,152 @@
     max-width:380px;
     margin:0 auto;
   }
-  @media (max-width:560px){
-    header{ padding:40px 24px 24px; }
-    form{ padding:8px 24px 8px; }
-    h1{ font-size:24px; }
-    .profile-photo{ width:56px; height:56px; }
-    .stamp{ width:60px; height:60px; top:28px; right:20px; }
-    .stamp-inner{ font-size:6.5px; }
-    .row{ grid-template-columns:1fr; }
-    .socials{ padding:28px 24px 8px; }
-    .thankyou{ padding:56px 24px; }
-  }
+
+  /* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width:1024px){
+
+.sheet{
+    width:95%;
+}
+
+header{
+    padding:42px 30px 28px;
+}
+
+form{
+    padding:8px 30px;
+}
+
+.row{
+    grid-template-columns:1fr;
+}
+
+.stamp{
+    display:none;
+}
+
+}
+
+
+/* ===========================
+   MÓVILES
+=========================== */
+
+@media (max-width:768px){
+
+body{
+    padding:0;
+    background:var(--paper);
+}
+
+.sheet{
+    width:100%;
+    border-radius:0;
+    box-shadow:none;
+}
+
+header{
+    padding:32px 22px 24px;
+}
+
+.header-top{
+    align-items:center;
+    gap:15px;
+}
+
+.profile-photo{
+    width:58px;
+    height:58px;
+}
+
+h1{
+    font-size:28px;
+    line-height:1.2;
+}
+
+.lede{
+    font-size:16px;
+    line-height:1.7;
+}
+
+form{
+    padding:0 22px;
+}
+
+.section{
+    padding:30px 0;
+}
+
+.section-title{
+    font-size:18px;
+}
+
+.row{
+    display:block;
+}
+
+.field{
+    margin-bottom:18px;
+}
+
+label{
+    font-size:13px;
+}
+
+input,
+select,
+textarea{
+    font-size:16px;
+    padding:15px;
+}
+
+textarea{
+    min-height:130px;
+}
+
+.chip-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.chip{
+    width:100%;
+}
+
+.chip span{
+    width:100%;
+    text-align:center;
+    white-space:normal;
+    padding:14px;
+}
+
+.submit-row{
+    flex-direction:column;
+}
+
+button[type="submit"]{
+    width:100%;
+    padding:18px;
+    font-size:14px;
+}
+
+.socials{
+    padding:30px 20px 12px;
+}
+
+.footer-tag{
+    padding-bottom:30px;
+}
+
+.thankyou{
+    padding:60px 22px;
+}
+
+}
 
 .status-message{margin-top:18px;text-align:center;font-size:13px;font-family:'IBM Plex Mono',monospace;display:none}
 .status-message.show{display:block}
