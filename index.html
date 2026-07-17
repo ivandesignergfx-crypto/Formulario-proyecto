@@ -569,7 +569,6 @@ button[disabled]{cursor:not-allowed}
       <div class="field">
         <label for="moodboard">Enlace a tu moodboard</label>
         <input type="url" id="moodboard" name="moodboard" placeholder="Pinterest, Google Drive, Canva... (opcional)">
-        <br></br>
         <p class="hint">Si tienes un tablero de referencias visuales, pega aquí el enlace.</p>
       </div>
     </div>
@@ -608,7 +607,7 @@ button[disabled]{cursor:not-allowed}
         <h2 class="section-title">Un último detalle</h2>
       </div>
       <div class="field">
-        <label for="origen">¿Cómo conociste mi trabajo?</label>
+        <label for="origen">¿Cómo conociste mi trabajo? <span class="req">*</span> </label>
         <select id="origen" name="origen">
           <option value="">Selecciona una opción</option>
           <option value="Instagram">Instagram</option>
@@ -624,7 +623,7 @@ button[disabled]{cursor:not-allowed}
     </div>
 
     <div class="submit-row">
-      <button id="submitBtn" type="submit">Enviar solicitud</button>
+      <button id="submitBtn" type="submit">Enviar formulario</button>
       <p id="statusMessage" class="status-message"></p>
     </div>
   </form>
